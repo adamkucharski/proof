@@ -1,5 +1,5 @@
 # proof
-This repository contains code and data to accompany [Proof: The Uncertain Science of Certainty](proof.kucharski.io) by Adam Kucharski.
+This repository contains code and data to accompany [Proof: The Uncertain Science of Certainty](https://proof.kucharski.io/) by Adam Kucharski.
 
 If you use any of the code/analysis under the GNU license, please cite 'Kucharski AJ, The Rules of Contagion: Why Things Spread - and Why They Stop, Wellcome Collection/Profile Books, 2020' as well as any relevant data sources and packages (listed below).
 
