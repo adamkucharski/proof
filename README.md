@@ -23,7 +23,7 @@ As you'd expect, data is the the `data` folder and plots are output in the `plot
 
 * PHE Variants of Concern Technical Briefing 10: [Supporting dataset](https://www.gov.uk/government/publications/investigation-of-novel-sars-cov-2-variant-variant-of-concern-20201201)
 * outbreakinfo variant proportions in India: [Variant explorer dataset](https://outbreak.info/)
-* covidregionaldata R package: [Palmer, Sherratt, Martin-Nielsen et al (2021) covidregionaldata: Subnational data for COVID-19 epidemiology, DOI: 10.21105/joss.03290](https://joss.theoj.org/papers/10.21105/joss.03290)
+* covidregionaldata R package: [Palmer et al., (2021). covidregionaldata: Subnational data for COVID-19 epidemiology. Journal of Open Source Software, 6(63), 3290](https://joss.theoj.org/papers/10.21105/joss.03290)
 
 #### Chapter 6
 
