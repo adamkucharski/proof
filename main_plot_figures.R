@@ -1,5 +1,5 @@
 # Model code to accompany "Proof"
-# Author: AJ Kucharski (2022-)
+# Author: AJ Kucharski (2025)
 
 # Set up plotting ----------------------------------------------------------
 
