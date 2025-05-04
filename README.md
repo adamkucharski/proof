@@ -28,5 +28,5 @@ As you'd expect, data is the the `data` folder and plots are output in the `plot
 #### Chapter 6
 
 * Perceptions of: [GitHub code](https://github.com/zonination/perceptions)
-* Effect sizes in clinical trials over time: [Kaplan and Irvin, PLOS ONE, 2015](10.1371/journal.pone.0132382)
+* Effect sizes in clinical trials over time: [Kaplan and Irvin, PLOS ONE, 2015](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0132382)
 

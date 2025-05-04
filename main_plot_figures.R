@@ -41,3 +41,6 @@ C5_estimative()
 
 # Probability of p-value < 0.05 when multiple hypotheses tested
 C6_multiple_tests()
+
+# Before and after pre-registration
+C6_registration()

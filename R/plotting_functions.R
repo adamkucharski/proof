@@ -31,6 +31,7 @@ plot_CI <- function(dates,xx,nn,colA="black",cex_in=1) {
 
 # Plot data and CI from pre-calculated values
 plot_3CI <- function(dates,xx,lower_x,upper_x,colA="black",cex_in=1) {
+  set.seed(10)
   
   for(ii in 1:length(xx)){
     noise_x <- runif(1,-0.3,0.3)
@@ -278,7 +279,7 @@ C6_multiple_tests <- function() {
   axis(2, at=seq(0,1,0.1),labels = paste0(seq(0,100,10),"%"),col = "black") 
   axis(1, at=seq(0,max(xx),5),labels = seq(0,max(xx),5),col = "black") 
   title(ylab=expression("probability of getting "*italic(p)*"-value below 5%"), 
-        line=3, cex.lab=0.9)
+        line=3, cex.lab=0.8)
   
   title(xlab="hypotheses tested", line=2, cex.lab=1)
 
@@ -290,7 +291,7 @@ C6_multiple_tests <- function() {
 # Changes in effect sizes before-and-after pre-registration
 
 C6_registration <- function() {
-  
+
   # Load data
   data_in <- read.csv("data/extracted_numerical_values.csv")
   
@@ -302,6 +303,7 @@ C6_registration <- function() {
   
   # Remove outlier (as in paper)
   data_in <- data_in[-7,]
+  #data_in <- data_in |> filter(data_in$pub_year<2000)
   
   plot(data_in$pub_year,-1+0*data_in$Value,type="l",
        ylim=c(0,1.8),xlim=c(1974,2015),yaxs="i",xaxs="i",xaxt="n",yaxt="n",ylab="",
@@ -311,7 +313,7 @@ C6_registration <- function() {
   lines(c(2000,2000),c(-1,3),lty=2)
   plot_3CI(data_in$pub_year,data_in$Value,data_in$Lower_CI,data_in$Upper_CI,cex=0.8)
   
-  axis(2, at=seq(0,2,0.1),labels = paste0(c(seq(-100,0,10),seq(10,100,10)),"%"),col = "black") 
+  axis(2, at=seq(0,2,0.2),labels = paste0(c(seq(-100,0,20),seq(20,100,20)),"%"),col = "black") 
   axis(1, at=seq(min(x_date),max(x_date),5),labels = seq(min(x_date),max(x_date),5),col = "black") 
   title(ylab="difference in risk", line=3, cex.lab=1)
   title(xlab="date of publication", line=2, cex.lab=1)
